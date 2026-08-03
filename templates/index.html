@@ -5,8 +5,9 @@
 <body>
 <h1>it works</h1>
 
+
 {%for item in send_test%}
-    <li>{{item}}<li>
+    <li>{{item[0], item[1]}}<li>
 {%endfor%}
 
 </body>

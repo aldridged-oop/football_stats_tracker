@@ -14,11 +14,15 @@ def home():
            """)
     cursor.execute(sql)
     results = cursor.fetchall()
-    return render_template("index.html", send_test = results)
+    temp_list = []
+    for tuple in results:
+        for item in tuple:
+            temp_list.append(item)
+        
+    return render_template("index.html", send_test = temp_list)
 
 if __name__ == "__main__":
     app.run(debug=True)
     
     
-    
-    
+        
