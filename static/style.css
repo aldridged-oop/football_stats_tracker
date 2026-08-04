@@ -2,3 +2,23 @@ h1 {
     color: blue;
     size: 50px;
 }
+
+button {
+    color: black;
+    
+}
+
+.row-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.grid-item {
+  width: 45%; 
+  box-sizing: border-box;
+}
+
+table, th, td {
+  border:1px solid black;
+}

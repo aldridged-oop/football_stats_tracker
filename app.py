@@ -15,9 +15,8 @@ def home():
     cursor.execute(sql)
     results = cursor.fetchall()
     temp_list = []
-    for tuple in results:
-        for item in tuple:
-            temp_list.append(item)
+    for item in results:
+        temp_list.append(item)
         
     return render_template("index.html", send_test = temp_list)
 

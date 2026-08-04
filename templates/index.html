@@ -3,12 +3,23 @@
     <link rel="stylesheet" href="static/style.css">
 </head>
 <body>
-<h1>it works</h1>
+<h1>it might works</h1>
 
+<button type="button">search</button>
 
-{%for item in send_test%}
-    <li>{{item[0], item[1]}}<li>
-{%endfor%}
+</div>
+<table>
+  <tr>
+    <th>Country</th>
+    <th>World Cups Won</th>
+  </tr>
+  {% for nation,wc_won in send_test %}
+  <tr>
+      <td>{{nation}}</td>
+      <td>{{wc_won}}</td>
+  </tr>
+  {%endfor%}
+</table>
 
 </body>
 
