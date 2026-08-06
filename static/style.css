@@ -5,18 +5,9 @@ h1 {
 
 button {
     color: black;
-    
-}
-
-.row-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
-}
-
-.grid-item {
-  width: 45%; 
-  box-sizing: border-box;
+    height: 50px;
+    width: 180px;
+    font-size: 25px;
 }
 
 table, th, td {

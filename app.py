@@ -20,8 +20,18 @@ def home():
         
     return render_template("index.html", send_test = temp_list)
 
+
+    
+@app.route("/players.html", methods=["GET", "POST"])
+def players():
+    
+    
+    return render_template("players.html")
+    
+    
+    
+    
+
 if __name__ == "__main__":
     app.run(debug=True)
     
-    
-        
