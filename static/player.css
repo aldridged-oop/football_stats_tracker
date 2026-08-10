@@ -1,0 +1,11 @@
+button {
+    color: black;
+    height: 50px;
+    width: 180px;
+    font-size: 25px;
+    margin: 10px 15px;
+}
+
+.player {
+    color: gray;
+}
