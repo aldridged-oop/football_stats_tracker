@@ -1,14 +1,33 @@
 <html>
 <head>
-    <link rel="stylesheet" href="static/player.css">
+    <link rel="stylesheet" href="static/style.css">
 </head>
 
-<body>
+<body id="player">
 <button class="home" onclick="location.replace('/')">home</button> <button class="player" onclick="location.replace('players.html')" disabled>players</button> <button class="search"  onclick="location.replace('search.html')">search</button>
 
 <h1>players</h1>
 
 
+
+{{send_player}}
+
+<!--
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Age</th>
+    <th>Nation</th>
+  </tr>
+  {% for name,age,nation in send_player %}
+  <tr>
+      <td>{{name}}</td>
+      <td>{{age}}</td>
+      <td>{{nation}}</td>
+  </tr>
+  {%endfor%}
+</table>
+-->
 
 </body>
 </html>
