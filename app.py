@@ -14,11 +14,11 @@ def home():
            """)
     cursor.execute(sql)
     results = cursor.fetchall()
-    temp_list = []
+    home_list = []
     for item in results:
-        temp_list.append(item)
+        home_list.append(item)
         
-    return render_template("home.html", send_test = temp_list)
+    return render_template("home.html", send_home = home_list)
 
 
     
@@ -31,10 +31,10 @@ def players():
         FROM players
         LEFT JOIN nations ON players.nation_id = nations.nation_id"""
     cursor.execute(sql)
-    test = cursor.fetchall()
+    player = cursor.fetchall()
     
     
-    return render_template("players.html", send_player = test)
+    return render_template("players.html", send_player = player)
     
     
     
