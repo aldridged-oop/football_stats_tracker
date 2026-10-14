@@ -1,28 +1,68 @@
+body {
+    margin: 0;
+    padding: 20px;
+    background-color: #eef5ee;
+    color: #263b30;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
 h1 {
-    color: blue;
-    size: 50px;
+    margin: 35px 0 25px;
+    color: #245c38;
+    font-size: 38px;
+}
+
+button,
+th {
+    background-color: #286340;
+    color: white;
 }
 
 button {
-    color: black;
-    height: 50px;
     width: 180px;
-    font-size: 25px;
-    margin: 10px 15px;
+    height: 48px;
+    margin: 8px;
+    border: none;
+    border-radius: 7px;
+    background-color: #286340;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
 }
 
-#home .home {
-    color: gray;
+button:hover {
+    background-color: #3d8051;
 }
 
-#player .player{
-    color: gray;
+#home .home,
+#player .player,
+#search .search {
+    background-color: #a8d5a2;
+    color: #173b30;
+    cursor: default;
 }
 
-#search .search{
-    color: gray;
+table {
+    width: 80%;
+    max-width: 800px;
+    margin: 30px auto;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 4px 12px #263b3020;
 }
 
-table, th, td {
-  border:1px solid black;
+th,
+td {
+    padding: 14px;
+    border: 1px solid #c9d9cb;
+}
+
+th {
+    background-color: #286340;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f4f8f4;
 }
