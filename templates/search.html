@@ -6,9 +6,29 @@
 <body id="search">
 <button class="home" onclick="location.replace('/')">home</button> <button class="player" onclick="location.replace('players.html')">players</button> <button class="search"  onclick="location.replace('search.html')" disabled>search</button>
 
-<h1>search</h1>
 
+<form action="search.html" method="post">
+    <label for="player_name">Player name:</label>
+    <input type="text" id="player_name" name="player_name" value="{{search_name}}">
+    <button type="submit">Search</button>
+</form>
 
+{% if not search_name %}
+<p>Enter a player name to search.</p>
+{% elif results %}
+<table>
+    <tr>
+        <th>Player name</th>
+    </tr>
+    {% for player in results %}
+    <tr>
+        <td>{{player[0]}}</td>
+    </tr>
+    {% endfor %}
+</table>
+{% else %}
+<p>No player found with that name.</p>
+{% endif %}
 
 </body>
 </html>

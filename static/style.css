@@ -13,18 +13,12 @@ h1 {
     font-size: 38px;
 }
 
-button,
-th {
-    background-color: #286340;
-    color: white;
-}
-
 button {
     width: 180px;
     height: 48px;
     margin: 8px;
     border: none;
-    border-radius: 7px;
+    border-radius: 3px;
     background-color: #286340;
     color: white;
     font-size: 20px;
@@ -41,6 +35,35 @@ button:hover {
     background-color: #a8d5a2;
     color: #173b30;
     cursor: default;
+}
+
+form {
+    display: inline-block;
+    margin: 20px auto;
+    padding: 18px;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0 4px 12px #263b3020;
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+    color: #245c38;
+    font-weight: bold;
+}
+
+form input[type="text"] {
+    width: 300px;
+    height: 48px;
+    padding: 10px;
+    border: 1px solid #a8c5ad;
+    border-radius: 3px;
+    font-size: 18px;
+}
+
+form button {
+    width: 130px;
 }
 
 table {
