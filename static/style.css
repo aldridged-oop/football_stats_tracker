@@ -38,11 +38,12 @@ button:hover {
 }
 
 form {
-    display: inline-block;
+    display: block;
     margin: 20px auto;
     padding: 18px;
     border-radius: 5px;
     background-color: white;
+    width: 20%;
     box-shadow: 0 4px 12px #263b3020;
 }
 

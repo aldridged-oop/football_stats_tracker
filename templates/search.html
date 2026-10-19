@@ -14,7 +14,7 @@
 </form>
 
 {% if not search_name %}
-<p>Enter a player name to search.</p>
+<h2>Enter a player name to search.</h2>
 {% elif results %}
 <table>
     <tr>
@@ -27,7 +27,7 @@
     {% endfor %}
 </table>
 {% else %}
-<p>No player found with that name.</p>
+<h2>No player found with that name.</h2>
 {% endif %}
 
 </body>
